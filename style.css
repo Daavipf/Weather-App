@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    background: rgb(149,13,114);
+    background: linear-gradient(0deg, rgba(149,13,114,1) 0%, rgba(182,35,139,1) 35%, rgba(255,119,0,1) 100%);
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    padding: 48px;
+    border-radius: 12px;
+    box-shadow: rgba(84, 84, 85, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgba(255,255,255, 0.12);
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(36px);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-container button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container i {
+    color: #fff;
+}
+
+.search-container input {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-size: large;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    flex-grow: 1;
+    color: #fff;
+}
+
+.search-container input::placeholder {
+    color: rgba(255,255,255,0.75);
+}
+
+.search-container input:focus {
+    border-bottom: 1px solid #fff;
+}
+
+.image-container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.image-container img {
+    width: 250px;
+}
+
+.image-container .weather-status {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden {
+	display: none;
+}
+
+.info {
+    text-align: center;
+    color: #fff;
+}
+
+.info h3 {
+    font-weight: 600;
+}
+
+.info p {
+    font-size: 12px;
+}
